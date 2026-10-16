@@ -19,30 +19,30 @@
   <text x="52" y="61" fill="#65FDF0" font-family="Consolas, monospace" font-size="15" font-weight="700" letter-spacing="3">ACTIVITY ARCADE // LIVE SAVE FILE</text>
   <text x="52" y="95" fill="#FFFFFF" font-family="Segoe UI, Arial, sans-serif" font-size="27" font-weight="800">PLAYER LEVEL 14</text>
   <rect x="300" y="75" width="832" height="16" rx="8" fill="#191E38"/>
-  <rect class="xp-bar" x="300" y="75" width="333" height="16" rx="8" fill="url(#xp)" filter="url(#glow)"/>
-  <text x="1132" y="67" text-anchor="end" fill="#92A1C6" font-family="Consolas, monospace" font-size="11">4/10 XP TO NEXT LEVEL</text>
+  <rect class="xp-bar" x="300" y="75" width="499" height="16" rx="8" fill="url(#xp)" filter="url(#glow)"/>
+  <text x="1132" y="67" text-anchor="end" fill="#92A1C6" font-family="Consolas, monospace" font-size="11">6/10 XP TO NEXT LEVEL</text>
   
   <g transform="translate(52 126)">
     <rect width="238" height="106" rx="18" fill="#10152B" stroke="#FF6EC7" stroke-opacity="0.55"/>
-    <text x="24" y="50" fill="#FF6EC7" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="800">134</text>
+    <text x="24" y="50" fill="#FF6EC7" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="800">136</text>
     <text x="24" y="78" fill="#92A1C6" font-family="Consolas, monospace" font-size="12" letter-spacing="1.2">CONTRIBUTIONS / YEAR</text>
   </g>
   
   <g transform="translate(306 126)">
     <rect width="238" height="106" rx="18" fill="#10152B" stroke="#F9F871" stroke-opacity="0.55"/>
-    <text x="24" y="50" fill="#F9F871" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="800">117</text>
+    <text x="24" y="50" fill="#F9F871" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="800">118</text>
     <text x="24" y="78" fill="#92A1C6" font-family="Consolas, monospace" font-size="12" letter-spacing="1.2">COMMITS / YEAR</text>
   </g>
   
   <g transform="translate(560 126)">
     <rect width="238" height="106" rx="18" fill="#10152B" stroke="#65FDF0" stroke-opacity="0.55"/>
-    <text x="24" y="50" fill="#65FDF0" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="800">6 DAYS</text>
+    <text x="24" y="50" fill="#65FDF0" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="800">7 DAYS</text>
     <text x="24" y="78" fill="#92A1C6" font-family="Consolas, monospace" font-size="12" letter-spacing="1.2">CURRENT STREAK</text>
   </g>
   
   <g transform="translate(814 126)">
     <rect width="238" height="106" rx="18" fill="#10152B" stroke="#A98BFF" stroke-opacity="0.55"/>
-    <text x="24" y="50" fill="#A98BFF" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="800">36</text>
+    <text x="24" y="50" fill="#A98BFF" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="800">37</text>
     <text x="24" y="78" fill="#92A1C6" font-family="Consolas, monospace" font-size="12" letter-spacing="1.2">ACTIVE DAYS / YEAR</text>
   </g>
   <g transform="translate(1068 126)">
@@ -421,7 +421,7 @@
     <rect class="cell" x="902" y="344" width="12" height="12" rx="3" fill="#173E4A" style="animation-delay:0.3s"><title>2026-10-13: 2 contributions</title></rect>
     <rect class="cell" x="902" y="360" width="12" height="12" rx="3" fill="#173E4A" style="animation-delay:0.35s"><title>2026-10-14: 1 contribution</title></rect>
     <rect class="cell" x="902" y="376" width="12" height="12" rx="3" fill="#173E4A" style="animation-delay:0.4s"><title>2026-10-15: 4 contributions</title></rect>
-    <rect class="cell" x="902" y="392" width="12" height="12" rx="3" fill="#161B2E" style="animation-delay:0.45s"><title>2026-10-16: 0 contributions</title></rect>
+    <rect class="cell" x="902" y="392" width="12" height="12" rx="3" fill="#173E4A" style="animation-delay:0.45s"><title>2026-10-16: 2 contributions</title></rect>
   </g>
   <text x="52" y="447" fill="#66759D" font-family="Consolas, monospace" font-size="11">AUTO-SYNCED DAILY FROM GITHUB</text>
   <text x="1148" y="447" text-anchor="end" fill="#66759D" font-family="Consolas, monospace" font-size="11">LAST CHECKPOINT: 2026-10-16 <tspan class="cursor" fill="#65FDF0">▮</tspan></text>
