@@ -1,94 +1,49 @@
-<svg width="1200" height="420" viewBox="0 0 1200 420" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">Aryan Singh — filmmaker and creative developer</title>
-  <desc id="desc">An animated neon arcade banner with cinematic framing.</desc>
+<svg width="1200" height="430" viewBox="0 0 1200 430" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Aryan Singh — story director and experience builder</title>
+  <desc id="desc">Animated coral fire and sky cyan cinematic title sequence.</desc>
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="420" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#070A18"/>
-      <stop offset="0.48" stop-color="#100A2F"/>
-      <stop offset="1" stop-color="#061D2A"/>
-    </linearGradient>
-    <linearGradient id="neon" x1="130" y1="90" x2="1060" y2="330" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#FF3CAC"/>
-      <stop offset="0.5" stop-color="#784BA0"/>
-      <stop offset="1" stop-color="#2B86C5"/>
-    </linearGradient>
-    <linearGradient id="titleGradient" x1="250" y1="140" x2="950" y2="260" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#F9F871"/>
-      <stop offset="0.48" stop-color="#FF6EC7"/>
-      <stop offset="1" stop-color="#65FDF0"/>
-      <animate attributeName="x1" values="0;600;0" dur="8s" repeatCount="indefinite"/>
-      <animate attributeName="x2" values="600;1200;600" dur="8s" repeatCount="indefinite"/>
-    </linearGradient>
-    <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse">
-      <path d="M42 0H0V42" stroke="#7DF9FF" stroke-opacity="0.08"/>
-    </pattern>
-    <filter id="glow" x="-30%" y="-60%" width="160%" height="220%">
-      <feGaussianBlur stdDeviation="8" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="3" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-    <clipPath id="frame"><rect x="22" y="22" width="1156" height="376" rx="25"/></clipPath>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="430"><stop stop-color="#06111A"/><stop offset=".5" stop-color="#091C27"/><stop offset="1" stop-color="#07141F"/></linearGradient>
+    <linearGradient id="duo" x1="180" y1="100" x2="1020" y2="330" gradientUnits="userSpaceOnUse"><stop stop-color="#FF4D4D"/><stop offset=".48" stop-color="#F7F6F2"/><stop offset="1" stop-color="#5CE1FF"/></linearGradient>
+    <radialGradient id="coralGlow"><stop stop-color="#FF4D4D" stop-opacity=".45"/><stop offset="1" stop-color="#FF4D4D" stop-opacity="0"/></radialGradient>
+    <radialGradient id="cyanGlow"><stop stop-color="#5CE1FF" stop-opacity=".35"/><stop offset="1" stop-color="#5CE1FF" stop-opacity="0"/></radialGradient>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse"><path d="M36 0H0V36" fill="none" stroke="#5CE1FF" stroke-opacity=".07"/></pattern>
+    <filter id="glow" x="-40%" y="-80%" width="180%" height="260%"><feGaussianBlur stdDeviation="8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <clipPath id="frame"><rect x="22" y="22" width="1156" height="386" rx="25"/></clipPath>
   </defs>
-
-  <rect width="1200" height="420" rx="28" fill="url(#bg)"/>
+  <style>
+    .scan { animation: scan 5s linear infinite; }
+    .float-a { animation: floatA 7s ease-in-out infinite; }
+    .float-b { animation: floatB 8s ease-in-out infinite; }
+    .blink { animation: blink 1s steps(2,end) infinite; }
+    .dash { animation: dash 12s linear infinite; }
+    @keyframes scan { from { transform: translateY(-80px); } to { transform: translateY(510px); } }
+    @keyframes floatA { 50% { transform: translate(35px,18px) scale(1.08); } }
+    @keyframes floatB { 50% { transform: translate(-28px,-16px) scale(.94); } }
+    @keyframes blink { 50% { opacity: 0; } }
+    @keyframes dash { to { stroke-dashoffset: -220; } }
+  </style>
+  <rect width="1200" height="430" rx="28" fill="url(#bg)"/>
   <g clip-path="url(#frame)">
-    <rect x="22" y="22" width="1156" height="376" fill="url(#grid)"/>
-    <circle cx="113" cy="96" r="170" fill="#FF3CAC" opacity="0.11">
-      <animate attributeName="r" values="150;200;150" dur="7s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="1085" cy="355" r="205" fill="#2B86C5" opacity="0.12">
-      <animate attributeName="r" values="190;235;190" dur="9s" repeatCount="indefinite"/>
-    </circle>
-    <path d="M-80 350L310 80L535 246L790 56L1280 350" stroke="url(#neon)" stroke-opacity="0.2" stroke-width="2"/>
-    <rect x="0" y="-80" width="1200" height="38" fill="url(#neon)" opacity="0.16">
-      <animate attributeName="y" values="-80;460" dur="6s" repeatCount="indefinite"/>
-    </rect>
+    <rect x="22" y="22" width="1156" height="386" fill="url(#grid)"/>
+    <circle class="float-a" cx="88" cy="86" r="235" fill="url(#coralGlow)"/>
+    <circle class="float-b" cx="1110" cy="364" r="250" fill="url(#cyanGlow)"/>
+    <path d="M-40 338L220 126L388 278L628 76L822 260L1240 68" fill="none" stroke="url(#duo)" stroke-width="2" stroke-opacity=".22" stroke-dasharray="18 18" class="dash"/>
+    <rect class="scan" x="22" y="-80" width="1156" height="55" fill="url(#duo)" opacity=".11"/>
+    <g opacity=".2" fill="none" stroke="#F7F6F2"><circle cx="600" cy="220" r="178"/><circle cx="600" cy="220" r="152"/><circle cx="600" cy="220" r="126"/></g>
   </g>
-
-  <rect x="22" y="22" width="1156" height="376" rx="25" stroke="url(#neon)" stroke-width="2">
-    <animate attributeName="stroke-opacity" values="0.55;1;0.55" dur="3s" repeatCount="indefinite"/>
-  </rect>
-
-  <g opacity="0.9">
-    <rect x="54" y="50" width="78" height="30" rx="15" fill="#FF3CAC" fill-opacity="0.12" stroke="#FF6EC7"/>
-    <circle cx="73" cy="65" r="5" fill="#FF557A"><animate attributeName="opacity" values="1;0.2;1" dur="1.2s" repeatCount="indefinite"/></circle>
-    <text x="86" y="70" fill="#FFD6EB" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="1">REC</text>
-    <text x="1065" y="70" fill="#8AFDF4" font-family="Consolas, monospace" font-size="13" letter-spacing="2">SCENE 01</text>
+  <rect x="22" y="22" width="1156" height="386" rx="25" fill="none" stroke="url(#duo)" stroke-width="2"/>
+  <g font-family="Consolas, monospace" font-size="12" font-weight="700" letter-spacing="2">
+    <rect x="50" y="49" width="118" height="32" rx="16" fill="#FF4D4D" fill-opacity=".16" stroke="#FF4D4D"/>
+    <circle cx="70" cy="65" r="5" fill="#FF4D4D" class="blink"/>
+    <text x="86" y="70" fill="#F7F6F2">REC / 01</text>
+    <text x="1150" y="69" text-anchor="end" fill="#5CE1FF">STORY MODE: ON</text>
   </g>
-
-  <g filter="url(#glow)">
-    <text x="600" y="202" text-anchor="middle" fill="url(#titleGradient)" font-family="Segoe UI, Arial, sans-serif" font-size="88" font-weight="900" letter-spacing="8">ARYAN SINGH</text>
+  <g filter="url(#glow)"><text x="600" y="215" text-anchor="middle" fill="url(#duo)" font-family="Arial Black, Segoe UI, sans-serif" font-size="94" font-weight="900" letter-spacing="7">ARYAN SINGH</text></g>
+  <text x="600" y="262" text-anchor="middle" fill="#F7F6F2" font-family="Consolas, monospace" font-size="19" font-weight="700" letter-spacing="5">STORY DIRECTOR  ×  EXPERIENCE BUILDER</text>
+  <g font-family="Consolas, monospace" font-size="13" font-weight="700" text-anchor="middle">
+    <g transform="translate(307 321)"><rect x="-118" y="-23" width="236" height="46" rx="23" fill="#0B202A" stroke="#FF4D4D"/><text y="5" fill="#F7F6F2"><tspan fill="#FF4D4D">01</tspan> FRAME THE STORY</text></g>
+    <g transform="translate(600 321)"><rect x="-118" y="-23" width="236" height="46" rx="23" fill="#0B202A" stroke="#F7F6F2" stroke-opacity=".55"/><text y="5" fill="#F7F6F2"><tspan fill="#5CE1FF">02</tspan> BUILD THE WORLD</text></g>
+    <g transform="translate(893 321)"><rect x="-118" y="-23" width="236" height="46" rx="23" fill="#0B202A" stroke="#5CE1FF"/><text y="5" fill="#F7F6F2"><tspan fill="#FF4D4D">03</tspan> MAKE IT MOVE</text></g>
   </g>
-  <text x="600" y="251" text-anchor="middle" fill="#D5D8FF" font-family="Consolas, monospace" font-size="20" font-weight="600" letter-spacing="5">FILMMAKER  ×  CREATIVE DEVELOPER</text>
-
-  <g font-family="Consolas, monospace" font-size="14" text-anchor="middle">
-    <g transform="translate(284 302)">
-      <rect x="-108" y="-22" width="216" height="44" rx="22" fill="#121630" stroke="#FF6EC7" stroke-opacity="0.75"/>
-      <text y="5" fill="#FFFFFF"><tspan fill="#FF6EC7">●</tspan> STORY-DRIVEN BUILDS</text>
-    </g>
-    <g transform="translate(600 302)">
-      <rect x="-108" y="-22" width="216" height="44" rx="22" fill="#121630" stroke="#F9F871" stroke-opacity="0.75"/>
-      <text y="5" fill="#FFFFFF"><tspan fill="#F9F871">◆</tspan> 16 PUBLIC PROJECTS</text>
-    </g>
-    <g transform="translate(916 302)">
-      <rect x="-108" y="-22" width="216" height="44" rx="22" fill="#121630" stroke="#65FDF0" stroke-opacity="0.75"/>
-      <text y="5" fill="#FFFFFF"><tspan fill="#65FDF0">▲</tspan> 6 LIVE EXPERIENCES</text>
-    </g>
-  </g>
-
-  <g font-family="Consolas, monospace" font-size="13" fill="#93A4C7">
-    <text x="54" y="371">INDIA / IIT KHARAGPUR / THE INTERNET</text>
-    <text x="1146" y="371" text-anchor="end">PRESS START TO EXPLORE <tspan fill="#65FDF0">▮</tspan>
-      <animate attributeName="opacity" values="1;1;0;0;1" dur="1.2s" repeatCount="indefinite"/>
-    </text>
-  </g>
-
-  <g fill="#65FDF0" filter="url(#softGlow)">
-    <circle cx="166" cy="111" r="2"><animate attributeName="opacity" values="0.1;1;0.1" dur="2.4s" repeatCount="indefinite"/></circle>
-    <circle cx="1020" cy="124" r="2"><animate attributeName="opacity" values="1;0.1;1" dur="3.2s" repeatCount="indefinite"/></circle>
-    <circle cx="1093" cy="238" r="3"><animate attributeName="opacity" values="0.2;1;0.2" dur="1.8s" repeatCount="indefinite"/></circle>
-  </g>
+  <g font-family="Consolas, monospace" font-size="12" fill="#91A9B7" letter-spacing="1.5"><text x="50" y="382">INDIA / IIT KHARAGPUR / THE INTERNET</text><text x="1150" y="382" text-anchor="end">SCROLL TO PLAY THE JOURNEY <tspan class="blink" fill="#5CE1FF">▮</tspan></text></g>
 </svg>
