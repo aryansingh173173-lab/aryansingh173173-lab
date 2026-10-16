@@ -9,7 +9,7 @@
 <br />
 
 <div align="center">
-  <img src="./assets/story-flow.svg" width="100%" alt="Animated journey from story and visual direction through code and launch" />
+  <img src="./assets/story-flow-coral-cyan.svg" width="100%" alt="Animated journey from story and visual direction through code and launch" />
 </div>
 
 <br />
@@ -65,7 +65,7 @@
 <br />
 
 <div align="center">
-  <img src="./assets/project-orbit.svg" width="100%" alt="Animated universe of all public projects" />
+  <img src="./assets/project-universe-coral-cyan.svg" width="100%" alt="Animated universe of all public projects" />
 </div>
 
 <details>

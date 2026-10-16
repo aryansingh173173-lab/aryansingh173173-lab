@@ -13,12 +13,12 @@
     .lane-c { animation: driftA 9s ease-in-out infinite alternate-reverse; }
     .lane-d { animation: driftB 6s ease-in-out infinite alternate-reverse; }
     .beam { animation: beam 4s linear infinite; }
-    .node { animation: node 2.6s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+    .node { animation: node 2.6s ease-in-out infinite; }
     .blink { animation: blink 1s steps(2,end) infinite; }
     @keyframes driftA { to { transform: translateX(24px); } }
     @keyframes driftB { to { transform: translateX(-22px); } }
     @keyframes beam { from { stroke-dashoffset: 0; } to { stroke-dashoffset: -110; } }
-    @keyframes node { 50% { transform: scale(1.08); opacity: 1; } }
+    @keyframes node { 0%,100% { opacity:.82; } 50% { opacity:1; filter:drop-shadow(0 0 6px #5CE1FF); } }
     @keyframes blink { 50% { opacity: .15; } }
   </style>
   <rect width="1200" height="430" rx="26" fill="url(#bg)"/>
