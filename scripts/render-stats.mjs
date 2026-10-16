@@ -190,7 +190,7 @@ const snakeSvg = `<svg width="1200" height="330" viewBox="0 0 1200 330" xmlns="h
 </svg>`;
 
 await Promise.all([
-  writeFile('assets/activity.svg', activitySvg, 'utf8'),
+  writeFile('assets/activity-coral-cyan.svg', activitySvg, 'utf8'),
   writeFile('assets/snake.svg', snakeSvg, 'utf8'),
 ]);
-console.log(`Rendered activity.svg and snake.svg for ${username}: ${total} contributions, level ${level}.`);
+console.log(`Rendered activity-coral-cyan.svg and snake.svg for ${username}: ${total} contributions, level ${level}.`);
