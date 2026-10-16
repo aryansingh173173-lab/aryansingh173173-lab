@@ -1,0 +1,39 @@
+<svg width="1200" height="495" viewBox="0 0 1200 495" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Project credits</title>
+  <desc id="desc">Sixteen public projects move across retro cinema credit strips.</desc>
+  <defs>
+  <filter id="grain" x="-10%" y="-10%" width="120%" height="120%">
+    <feTurbulence type="fractalNoise" baseFrequency=".75" numOctaves="2" seed="9" result="noise"/>
+    <feColorMatrix in="noise" type="saturate" values="0" result="mono"/>
+    <feComponentTransfer in="mono" result="fade"><feFuncA type="table" tableValues="0 .13"/></feComponentTransfer>
+    <feBlend in="SourceGraphic" in2="fade" mode="multiply"/>
+  </filter></defs>
+  <style>
+    .left { animation:left 24s linear infinite}.right { animation:right 27s linear infinite}
+    .star { animation:spin 12s linear infinite;transform-origin:center}
+    @keyframes left { to { transform:translateX(-420px) } }
+    @keyframes right { to { transform:translateX(420px) } }
+    @keyframes spin { to { transform:rotate(360deg) } }
+    @media (prefers-reduced-motion: reduce) { * { animation:none!important; } }
+  </style>
+  <rect width="1200" height="495" fill="#4E8DC0"/>
+  <path d="M0 0H1200V28C920 7 280 55 0 28Z" fill="#FC5012"/>
+  <text x="48" y="88" fill="#F3ECC0" stroke="#0D0D11" stroke-width="2" paint-order="stroke" font-family="Impact, Haettenschweiler, sans-serif" font-size="51" letter-spacing="3">PROJECT CREDITS</text>
+  <text x="1148" y="82" text-anchor="end" fill="#F9C82D" font-family="Georgia, serif" font-size="16" font-weight="700" font-style="italic">16 builds and counting</text>
+  <g transform="rotate(1.2 600 177)">
+    <rect x="-20" y="150" width="1240" height="56" fill="#F3ECC0"/>
+    <text class="right" x="-520" y="188" fill="#0D0D11" font-family="Arial Black, Arial, sans-serif" font-size="18" font-weight="900" letter-spacing="1.5">BKS BENGAL   ✦   KRL SITE   ✦   BKS PUJO PART 2   ✦   NEW SITE   ✦   BKS BENGAL   ✦   KRL SITE   ✦   BKS PUJO PART 2   ✦   NEW SITE</text>
+  </g><g transform="rotate(-1.2 600 249)">
+    <rect x="-20" y="222" width="1240" height="56" fill="#F9C82D"/>
+    <text class="left" x="-170" y="260" fill="#0D0D11" font-family="Arial Black, Arial, sans-serif" font-size="18" font-weight="900" letter-spacing="1.5">BKS PUJO   ✦   KRL TEAMS REDESIGN   ✦   GRAVITY RSVP   ✦   KRL MEDIA CONNECT   ✦   BKS PUJO   ✦   KRL TEAMS REDESIGN   ✦   GRAVITY RSVP   ✦   KRL MEDIA CONNECT</text>
+  </g><g transform="rotate(1.2 600 321)">
+    <rect x="-20" y="294" width="1240" height="56" fill="#FC5012"/>
+    <text class="right" x="-520" y="332" fill="#F3ECC0" font-family="Arial Black, Arial, sans-serif" font-size="18" font-weight="900" letter-spacing="1.5">PRAVASI KRISHI BANDHU   ✦   BKS PUJO DEMO   ✦   ARYAN FILMMAKING   ✦   SREENIVED CV   ✦   PRAVASI KRISHI BANDHU   ✦   BKS PUJO DEMO   ✦   ARYAN FILMMAKING   ✦   SREENIVED CV</text>
+  </g><g transform="rotate(-1.2 600 393)">
+    <rect x="-20" y="366" width="1240" height="56" fill="#F3ECC0"/>
+    <text class="left" x="-170" y="404" fill="#0D0D11" font-family="Arial Black, Arial, sans-serif" font-size="18" font-weight="900" letter-spacing="1.5">BOLT NEW REPO   ✦   PORTFOLIO WEBSITE   ✦   ARYANS.GITHUB.IO   ✦   ARYANS   ✦   BOLT NEW REPO   ✦   PORTFOLIO WEBSITE   ✦   ARYANS.GITHUB.IO   ✦   ARYANS</text>
+  </g>
+  <g class="star" transform="translate(1138 445)" fill="#F9C82D"><path d="M0-26L7-8 25-8 11 3 16 22 0 11-16 22-11 3-25-8-7-8Z"/></g>
+  <text x="48" y="461" fill="#F3ECC0" font-family="Arial Black, Arial, sans-serif" font-size="12" font-weight="900" letter-spacing="4">EVERY REPOSITORY IS ANOTHER SCENE IN THE ARCHIVE</text>
+  <rect width="1200" height="495" fill="transparent" filter="url(#grain)" opacity=".22"/>
+</svg>

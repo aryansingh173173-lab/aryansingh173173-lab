@@ -1,71 +1,51 @@
 <div align="center">
-  <img src="./assets/hero-neon-yellow.svg" width="100%" alt="Aryan Singh — story director and experience builder" />
+  <img src="./assets/hero-retro-entwista.svg" width="100%" alt="Aryan Singh — story director and experience builder" />
   <br /><br />
-  <a href="https://aryan-film-making.vercel.app"><img src="https://img.shields.io/badge/ENTER_THE_PORTFOLIO-F1FF0A?style=for-the-badge&logo=vercel&logoColor=0D0D11" alt="Enter the portfolio" /></a>
-  <a href="https://github.com/aryansingh173173-lab?tab=repositories"><img src="https://img.shields.io/badge/EXPLORE_ALL_BUILDS-F1FF0A?style=for-the-badge&logo=github&logoColor=0D0D11" alt="Explore all builds" /></a>
-  <img src="https://komarev.com/ghpvc/?username=aryansingh173173-lab&style=for-the-badge&color=F1FF0A&label=PROFILE+PLAYS&v=neon-yellow" alt="Profile views" />
+  <a href="https://aryan-film-making.vercel.app"><img src="https://img.shields.io/badge/ENTER_THE_PORTFOLIO-FC5012?style=for-the-badge&logo=vercel&logoColor=F3ECC0" alt="Enter the portfolio" /></a>
+  <a href="https://github.com/aryansingh173173-lab?tab=repositories"><img src="https://img.shields.io/badge/EXPLORE_ALL_BUILDS-4E8DC0?style=for-the-badge&logo=github&logoColor=F3ECC0" alt="Explore all builds" /></a>
+  <img src="https://komarev.com/ghpvc/?username=aryansingh173173-lab&style=for-the-badge&color=F9C82D&label=PROFILE+PLAYS&v=retro-entwista" alt="Profile views" />
 </div>
 
 <br />
 
 <div align="center">
-  <img src="./assets/story-flow-neon-yellow.svg" width="100%" alt="Animated journey from story and visual direction through code and launch" />
+  <img src="./assets/storyboard-retro-entwista.svg" width="100%" alt="Animated contact sheet of real work moving from story through launch" />
 </div>
 
 <br />
 
-<h2 align="center">LIVE BUILD REEL</h2>
-<p align="center"><code>TAP ANY FRAME TO ENTER THE EXPERIENCE</code></p>
+<h2 align="center">SELECTED WORK · THE REEL</h2>
+<p align="center"><i>Click a poster and step inside the build.</i></p>
 
-<table>
-  <tr>
-    <td width="50%" align="center">
-      <a href="https://bks-bengal.vercel.app"><img src="./assets/previews/bks-bengal-neon.svg" width="100%" alt="Animated preview of BKS Bengal" /></a><br />
-      <a href="https://github.com/aryansingh173173-lab/bks-bengal"><sub>SOURCE / BKS BENGAL</sub></a>
-    </td>
-    <td width="50%" align="center">
-      <a href="https://krl-site.vercel.app"><img src="./assets/previews/krl-site-neon.svg" width="100%" alt="Animated preview of Krishi Ratna League" /></a><br />
-      <a href="https://github.com/aryansingh173173-lab/krl-site"><sub>SOURCE / KRISHI RATNA LEAGUE</sub></a>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" align="center">
-      <a href="https://gravity-rsvp.vercel.app"><img src="./assets/previews/gravity-rsvp-neon.svg" width="100%" alt="Animated preview of Gravity RSVP" /></a><br />
-      <a href="https://github.com/aryansingh173173-lab/gravity-rsvp"><sub>SOURCE / GRAVITY RSVP</sub></a>
-    </td>
-    <td width="50%" align="center">
-      <a href="https://pravasi-krishi-bandhu-cinematic-tau.vercel.app"><img src="./assets/previews/pravasi-krishi-bandhu-neon.svg" width="100%" alt="Animated preview of Pravasi Krishi Bandhu" /></a><br />
-      <a href="https://github.com/aryansingh173173-lab/pravasi-krishi-bandhu-cinematic"><sub>SOURCE / PRAVASI KRISHI BANDHU</sub></a>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" align="center">
-      <a href="https://bks-pujo-demo.vercel.app"><img src="./assets/previews/bks-pujo-demo-neon.svg" width="100%" alt="Animated preview of BKS Pujo 2026" /></a><br />
-      <a href="https://github.com/aryansingh173173-lab/bks-pujo-demo"><sub>SOURCE / BKS PUJO 2026</sub></a>
-    </td>
-    <td width="50%" align="center">
-      <a href="https://aryan-film-making.vercel.app"><img src="./assets/previews/aryan-filmmaking-neon.svg" width="100%" alt="Animated preview of Aryan Singh's filmmaking portfolio" /></a><br />
-      <a href="https://github.com/aryansingh173173-lab/Aryan-Film-making"><sub>SOURCE / FILMMAKING PORTFOLIO</sub></a>
-    </td>
-  </tr>
-</table>
+<p align="center">
+  <a href="https://bks-pujoo.vercel.app/site/?lang=en"><img src="./assets/retro-previews/bks-pujoo.svg" width="49%" alt="Animated preview of BKS Pujoo" /></a>
+  <a href="https://bks-bengal.vercel.app"><img src="./assets/retro-previews/bks-bengal.svg" width="49%" alt="Animated preview of BKS Bengal" /></a>
+</p>
+<p align="center">
+  <a href="https://krl-site.vercel.app"><img src="./assets/retro-previews/krl-site.svg" width="49%" alt="Animated preview of Krishi Ratna League" /></a>
+  <a href="https://pravasi-krishi-bandhu-cinematic-tau.vercel.app"><img src="./assets/retro-previews/pravasi-krishi-bandhu.svg" width="49%" alt="Animated preview of Pravasi Krishi Bandhu" /></a>
+</p>
+<p align="center">
+  <a href="https://bks-pujo-demo.vercel.app"><img src="./assets/retro-previews/bks-pujo-demo.svg" width="49%" alt="Animated preview of BKS Pujo 2026" /></a>
+  <a href="https://aryan-film-making.vercel.app"><img src="./assets/retro-previews/aryan-filmmaking.svg" width="49%" alt="Animated preview of Aryan Singh's filmmaking portfolio" /></a>
+</p>
 
 <br />
 
 <div align="center">
-  <img src="./assets/activity-neon-yellow.svg" width="100%" alt="Live GitHub contribution statistics in a game interface" />
+  <img src="./assets/activity-retro-entwista.svg" width="100%" alt="Live GitHub contribution statistics in a retro arcade interface" />
 </div>
 
 <br />
 
 <div align="center">
-  <img src="./assets/snake-neon-yellow.svg" width="100%" alt="Animated contribution snake travelling through the last year" />
+  <img src="./assets/snake-retro-entwista.svg" width="100%" alt="Animated contribution snake travelling through the last year" />
 </div>
 
 <br />
 
 <div align="center">
-  <img src="./assets/project-universe-neon-yellow.svg" width="100%" alt="Animated universe of all public projects" />
+  <img src="./assets/project-credits-retro-entwista.svg" width="100%" alt="Animated retro credits for all public projects" />
 </div>
 
 <details>
@@ -74,11 +54,11 @@
 
 | Project | Portal |
 | :--- | :---: |
+| **BKS Pujoo** | [Live](https://bks-pujoo.vercel.app/site/?lang=en) · [Code](https://github.com/aryansingh173173-lab/bks-pujo) |
 | **bks-bengal** | [Live](https://bks-bengal.vercel.app) · [Code](https://github.com/aryansingh173173-lab/bks-bengal) |
 | **krl-site** | [Live](https://krl-site.vercel.app) · [Code](https://github.com/aryansingh173173-lab/krl-site) |
 | **bks-pujo-part-2** | [Code](https://github.com/aryansingh173173-lab/bks-pujo-part-2) |
 | **new-site** | [Code](https://github.com/aryansingh173173-lab/new-site) |
-| **bks-pujo** | [Code](https://github.com/aryansingh173173-lab/bks-pujo) |
 | **krl-teams-redesign** | [Code](https://github.com/aryansingh173173-lab/krl-teams-redesign) |
 | **gravity-rsvp** | [Live](https://gravity-rsvp.vercel.app) · [Code](https://github.com/aryansingh173173-lab/gravity-rsvp) |
 | **krl-media-connect-redesign** | [Code](https://github.com/aryansingh173173-lab/krl-media-connect-redesign) |
@@ -96,7 +76,7 @@
 <br />
 
 <div align="center">
-  <a href="https://github.com/aryansingh173173-lab"><img src="https://img.shields.io/badge/BUILD_THE_NEXT_SCENE-F1FF0A?style=for-the-badge&logo=github&logoColor=0D0D11" alt="Connect on GitHub" /></a>
+  <a href="https://github.com/aryansingh173173-lab"><img src="https://img.shields.io/badge/BUILD_THE_NEXT_SCENE-FC5012?style=for-the-badge&logo=github&logoColor=F3ECC0" alt="Connect on GitHub" /></a>
   <br /><br />
-  <img src="./assets/footer-neon-yellow.svg" width="100%" alt="The next scene is already rendering" />
+  <img src="./assets/footer-retro-entwista.svg" width="100%" alt="The next scene is already rendering" />
 </div>

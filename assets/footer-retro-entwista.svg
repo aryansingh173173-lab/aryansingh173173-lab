@@ -1,0 +1,24 @@
+<svg width="1200" height="260" viewBox="0 0 1200 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">The next scene is already rendering</title>
+  <desc id="desc">A retro animated closing card in the profile palette.</desc>
+  <defs>
+  <filter id="grain" x="-10%" y="-10%" width="120%" height="120%">
+    <feTurbulence type="fractalNoise" baseFrequency=".75" numOctaves="2" seed="9" result="noise"/>
+    <feColorMatrix in="noise" type="saturate" values="0" result="mono"/>
+    <feComponentTransfer in="mono" result="fade"><feFuncA type="table" tableValues="0 .13"/></feComponentTransfer>
+    <feBlend in="SourceGraphic" in2="fade" mode="multiply"/>
+  </filter></defs>
+  <style>
+    .sun { animation:pulse 5s ease-in-out infinite;transform-origin:600px 137px}.rays { animation:spin 22s linear infinite;transform-origin:600px 137px}
+    @keyframes pulse { 50% { transform:scale(1.07) } } @keyframes spin { to { transform:rotate(360deg) } }
+    @media (prefers-reduced-motion: reduce) { * { animation:none!important; } }
+  </style>
+  <rect width="1200" height="260" fill="#FC5012"/>
+  <g class="rays" opacity=".28" fill="#F3ECC0"><path d="M594 137L570 -90H630L606 137Z" transform="rotate(0 600 137)"/><path d="M594 137L570 -90H630L606 137Z" transform="rotate(22.5 600 137)"/><path d="M594 137L570 -90H630L606 137Z" transform="rotate(45 600 137)"/><path d="M594 137L570 -90H630L606 137Z" transform="rotate(67.5 600 137)"/><path d="M594 137L570 -90H630L606 137Z" transform="rotate(90 600 137)"/><path d="M594 137L570 -90H630L606 137Z" transform="rotate(112.5 600 137)"/><path d="M594 137L570 -90H630L606 137Z" transform="rotate(135 600 137)"/><path d="M594 137L570 -90H630L606 137Z" transform="rotate(157.5 600 137)"/><path d="M594 137L570 -90H630L606 137Z" transform="rotate(180 600 137)"/><path d="M594 137L570 -90H630L606 137Z" transform="rotate(202.5 600 137)"/><path d="M594 137L570 -90H630L606 137Z" transform="rotate(225 600 137)"/><path d="M594 137L570 -90H630L606 137Z" transform="rotate(247.5 600 137)"/><path d="M594 137L570 -90H630L606 137Z" transform="rotate(270 600 137)"/><path d="M594 137L570 -90H630L606 137Z" transform="rotate(292.5 600 137)"/><path d="M594 137L570 -90H630L606 137Z" transform="rotate(315 600 137)"/><path d="M594 137L570 -90H630L606 137Z" transform="rotate(337.5 600 137)"/></g>
+  <circle class="sun" cx="600" cy="137" r="94" fill="#F9C82D"/>
+  <path d="M0 205C168 160 329 238 502 198C714 148 919 235 1200 185V260H0Z" fill="#4E8DC0"/>
+  <text x="600" y="117" text-anchor="middle" fill="#F3ECC0" stroke="#0D0D11" stroke-width="3" paint-order="stroke" font-family="Impact, Haettenschweiler, sans-serif" font-size="53" letter-spacing="2">THE NEXT SCENE</text>
+  <text x="600" y="169" text-anchor="middle" fill="#F3ECC0" stroke="#0D0D11" stroke-width="3" paint-order="stroke" font-family="Impact, Haettenschweiler, sans-serif" font-size="53" letter-spacing="2">IS ALREADY RENDERING</text>
+  <text x="600" y="226" text-anchor="middle" fill="#F3ECC0" font-family="Arial Black, Arial, sans-serif" font-size="12" font-weight="900" letter-spacing="5">DIRECTED • DESIGNED • DEVELOPED BY ARYAN SINGH</text>
+  <rect width="1200" height="260" fill="transparent" filter="url(#grain)" opacity=".2"/>
+</svg>
