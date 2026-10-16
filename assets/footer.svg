@@ -1,0 +1,13 @@
+<svg width="1200" height="150" viewBox="0 0 1200 150" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="End credits">
+  <defs>
+    <linearGradient id="line" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF3CAC" stop-opacity="0"/><stop offset="0.25" stop-color="#FF3CAC"/><stop offset="0.5" stop-color="#F9F871"/><stop offset="0.75" stop-color="#65FDF0"/><stop offset="1" stop-color="#65FDF0" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="150" rx="22" fill="#070A18"/>
+  <path d="M0 32C150 0 250 64 400 32S650 0 800 32s250 32 400 0" stroke="url(#line)" stroke-width="3">
+    <animate attributeName="d" dur="8s" repeatCount="indefinite" values="M0 32C150 0 250 64 400 32S650 0 800 32s250 32 400 0;M0 32C150 64 250 0 400 32s250 32 400 0 250 0 400 32;M0 32C150 0 250 64 400 32S650 0 800 32s250 32 400 0"/>
+  </path>
+  <text x="600" y="90" text-anchor="middle" fill="#D5D8FF" font-family="Consolas, monospace" font-size="17" letter-spacing="4">THE NEXT SCENE IS ALREADY RENDERING</text>
+  <text x="600" y="120" text-anchor="middle" fill="#7583A7" font-family="Consolas, monospace" font-size="12" letter-spacing="2">DESIGNED &amp; BUILT BY ARYAN SINGH</text>
+</svg>

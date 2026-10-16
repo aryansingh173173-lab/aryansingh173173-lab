@@ -1,0 +1,94 @@
+<svg width="1200" height="420" viewBox="0 0 1200 420" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Aryan Singh — filmmaker and creative developer</title>
+  <desc id="desc">An animated neon arcade banner with cinematic framing.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="420" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#070A18"/>
+      <stop offset="0.48" stop-color="#100A2F"/>
+      <stop offset="1" stop-color="#061D2A"/>
+    </linearGradient>
+    <linearGradient id="neon" x1="130" y1="90" x2="1060" y2="330" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF3CAC"/>
+      <stop offset="0.5" stop-color="#784BA0"/>
+      <stop offset="1" stop-color="#2B86C5"/>
+    </linearGradient>
+    <linearGradient id="titleGradient" x1="250" y1="140" x2="950" y2="260" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F9F871"/>
+      <stop offset="0.48" stop-color="#FF6EC7"/>
+      <stop offset="1" stop-color="#65FDF0"/>
+      <animate attributeName="x1" values="0;600;0" dur="8s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="600;1200;600" dur="8s" repeatCount="indefinite"/>
+    </linearGradient>
+    <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse">
+      <path d="M42 0H0V42" stroke="#7DF9FF" stroke-opacity="0.08"/>
+    </pattern>
+    <filter id="glow" x="-30%" y="-60%" width="160%" height="220%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="frame"><rect x="22" y="22" width="1156" height="376" rx="25"/></clipPath>
+  </defs>
+
+  <rect width="1200" height="420" rx="28" fill="url(#bg)"/>
+  <g clip-path="url(#frame)">
+    <rect x="22" y="22" width="1156" height="376" fill="url(#grid)"/>
+    <circle cx="113" cy="96" r="170" fill="#FF3CAC" opacity="0.11">
+      <animate attributeName="r" values="150;200;150" dur="7s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1085" cy="355" r="205" fill="#2B86C5" opacity="0.12">
+      <animate attributeName="r" values="190;235;190" dur="9s" repeatCount="indefinite"/>
+    </circle>
+    <path d="M-80 350L310 80L535 246L790 56L1280 350" stroke="url(#neon)" stroke-opacity="0.2" stroke-width="2"/>
+    <rect x="0" y="-80" width="1200" height="38" fill="url(#neon)" opacity="0.16">
+      <animate attributeName="y" values="-80;460" dur="6s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <rect x="22" y="22" width="1156" height="376" rx="25" stroke="url(#neon)" stroke-width="2">
+    <animate attributeName="stroke-opacity" values="0.55;1;0.55" dur="3s" repeatCount="indefinite"/>
+  </rect>
+
+  <g opacity="0.9">
+    <rect x="54" y="50" width="78" height="30" rx="15" fill="#FF3CAC" fill-opacity="0.12" stroke="#FF6EC7"/>
+    <circle cx="73" cy="65" r="5" fill="#FF557A"><animate attributeName="opacity" values="1;0.2;1" dur="1.2s" repeatCount="indefinite"/></circle>
+    <text x="86" y="70" fill="#FFD6EB" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="1">REC</text>
+    <text x="1065" y="70" fill="#8AFDF4" font-family="Consolas, monospace" font-size="13" letter-spacing="2">SCENE 01</text>
+  </g>
+
+  <g filter="url(#glow)">
+    <text x="600" y="202" text-anchor="middle" fill="url(#titleGradient)" font-family="Segoe UI, Arial, sans-serif" font-size="88" font-weight="900" letter-spacing="8">ARYAN SINGH</text>
+  </g>
+  <text x="600" y="251" text-anchor="middle" fill="#D5D8FF" font-family="Consolas, monospace" font-size="20" font-weight="600" letter-spacing="5">FILMMAKER  ×  CREATIVE DEVELOPER</text>
+
+  <g font-family="Consolas, monospace" font-size="14" text-anchor="middle">
+    <g transform="translate(284 302)">
+      <rect x="-108" y="-22" width="216" height="44" rx="22" fill="#121630" stroke="#FF6EC7" stroke-opacity="0.75"/>
+      <text y="5" fill="#FFFFFF"><tspan fill="#FF6EC7">●</tspan> STORY-DRIVEN BUILDS</text>
+    </g>
+    <g transform="translate(600 302)">
+      <rect x="-108" y="-22" width="216" height="44" rx="22" fill="#121630" stroke="#F9F871" stroke-opacity="0.75"/>
+      <text y="5" fill="#FFFFFF"><tspan fill="#F9F871">◆</tspan> 16 PUBLIC PROJECTS</text>
+    </g>
+    <g transform="translate(916 302)">
+      <rect x="-108" y="-22" width="216" height="44" rx="22" fill="#121630" stroke="#65FDF0" stroke-opacity="0.75"/>
+      <text y="5" fill="#FFFFFF"><tspan fill="#65FDF0">▲</tspan> 6 LIVE EXPERIENCES</text>
+    </g>
+  </g>
+
+  <g font-family="Consolas, monospace" font-size="13" fill="#93A4C7">
+    <text x="54" y="371">INDIA / IIT KHARAGPUR / THE INTERNET</text>
+    <text x="1146" y="371" text-anchor="end">PRESS START TO EXPLORE <tspan fill="#65FDF0">▮</tspan>
+      <animate attributeName="opacity" values="1;1;0;0;1" dur="1.2s" repeatCount="indefinite"/>
+    </text>
+  </g>
+
+  <g fill="#65FDF0" filter="url(#softGlow)">
+    <circle cx="166" cy="111" r="2"><animate attributeName="opacity" values="0.1;1;0.1" dur="2.4s" repeatCount="indefinite"/></circle>
+    <circle cx="1020" cy="124" r="2"><animate attributeName="opacity" values="1;0.1;1" dur="3.2s" repeatCount="indefinite"/></circle>
+    <circle cx="1093" cy="238" r="3"><animate attributeName="opacity" values="0.2;1;0.2" dur="1.8s" repeatCount="indefinite"/></circle>
+  </g>
+</svg>
