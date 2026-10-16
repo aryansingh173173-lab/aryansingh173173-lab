@@ -41,8 +41,12 @@ if (payload.errors) throw new Error(JSON.stringify(payload.errors));
 
 const user = payload.data.user;
 const stats = user.contributionsCollection;
-const days = stats.contributionCalendar.weeks.flatMap((week) => week.contributionDays);
 const today = new Date().toISOString().slice(0, 10);
+const days = stats.contributionCalendar.weeks
+  .flatMap((week) => week.contributionDays)
+  .map((day) => ({ ...day }));
+const todayCell = days.find((day) => day.date === today);
+if (todayCell) todayCell.contributionCount += 1; // Account for the commit that publishes this snapshot.
 const throughToday = days.filter((day) => day.date <= today);
 const activeDays = throughToday.filter((day) => day.contributionCount > 0).length;
 
@@ -54,7 +58,8 @@ while (cursor >= 0 && throughToday[cursor].contributionCount > 0) {
   cursor -= 1;
 }
 
-const total = stats.contributionCalendar.totalContributions;
+const total = stats.contributionCalendar.totalContributions + 1;
+const commits = stats.totalCommitContributions + 1;
 const level = Math.floor(total / 10) + 1;
 const progress = total % 10;
 const repoCount = user.repositories.nodes.filter((repo) => repo.name !== username).length;
@@ -107,8 +112,8 @@ const svg = `<svg width="1200" height="475" viewBox="0 0 1200 475" fill="none" x
   <rect x="300" y="75" width="832" height="16" rx="8" fill="#191E38"/>
   <rect class="xp-bar" x="300" y="75" width="${Math.max(18, Math.round(832 * progress / 10))}" height="16" rx="8" fill="url(#xp)" filter="url(#glow)"/>
   <text x="1132" y="67" text-anchor="end" fill="#92A1C6" font-family="Consolas, monospace" font-size="11">${progress}/10 XP TO NEXT LEVEL</text>
-  ${metric(52, total, 'CONTRIBUTIONS / YEAR', '#FF6EC7')}
-  ${metric(306, stats.totalCommitContributions, 'COMMITS / YEAR', '#F9F871')}
+  ${metric(52, total, 'PUBLIC CONTRIBUTIONS', '#FF6EC7')}
+  ${metric(306, commits, 'PUBLIC COMMITS / YEAR', '#F9F871')}
   ${metric(560, `${streak} DAYS`, 'CURRENT STREAK', '#65FDF0')}
   ${metric(814, activeDays, 'ACTIVE DAYS / YEAR', '#A98BFF')}
   <g transform="translate(1068 126)">
@@ -120,7 +125,7 @@ const svg = `<svg width="1200" height="475" viewBox="0 0 1200 475" fill="none" x
   <g>
     ${cells}
   </g>
-  <text x="52" y="447" fill="#66759D" font-family="Consolas, monospace" font-size="11">AUTO-SYNCED DAILY FROM GITHUB</text>
+  <text x="52" y="447" fill="#66759D" font-family="Consolas, monospace" font-size="11">SNAPSHOT FROM GITHUB PUBLIC ACTIVITY</text>
   <text x="1148" y="447" text-anchor="end" fill="#66759D" font-family="Consolas, monospace" font-size="11">LAST CHECKPOINT: ${escapeXml(today)} <tspan class="cursor" fill="#65FDF0">▮</tspan></text>
 </svg>`;
 
