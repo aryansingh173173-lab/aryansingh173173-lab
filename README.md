@@ -3,7 +3,7 @@
   <br /><br />
   <a href="https://aryan-film-making.vercel.app"><img src="https://img.shields.io/badge/ENTER_THE_PORTFOLIO-F1FF0A?style=for-the-badge&logo=vercel&logoColor=0D0D11" alt="Enter the portfolio" /></a>
   <a href="https://github.com/aryansingh173173-lab?tab=repositories"><img src="https://img.shields.io/badge/EXPLORE_ALL_BUILDS-F1FF0A?style=for-the-badge&logo=github&logoColor=0D0D11" alt="Explore all builds" /></a>
-  <img src="https://komarev.com/ghpvc/?username=aryansingh173173-lab&style=for-the-badge&color=F1FF0A&label=PROFILE+PLAYS" alt="Profile views" />
+  <img src="https://komarev.com/ghpvc/?username=aryansingh173173-lab&style=for-the-badge&color=F1FF0A&label=PROFILE+PLAYS&v=neon-yellow" alt="Profile views" />
 </div>
 
 <br />
