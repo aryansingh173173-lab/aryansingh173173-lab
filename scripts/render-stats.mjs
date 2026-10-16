@@ -62,7 +62,7 @@ const level = Math.floor(total / 10) + 1;
 const progress = total % 10;
 const repoCount = user.repositories.nodes.filter((repo) => repo.name !== username).length;
 const maxCount = Math.max(1, ...days.map((day) => day.contributionCount));
-const colors = ['#122A35', '#174453', '#1F7187', '#35B9D8', '#5CE1FF'];
+const colors = ['#1B1C13', '#383B12', '#6A710D', '#AEB90B', '#F1FF0A'];
 const levelFor = (count) => count === 0 ? 0 : Math.min(4, Math.max(1, Math.ceil((count / maxCount) * 4)));
 const escapeXml = (value) => String(value).replace(/[&<>"']/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&apos;' }[char]));
 
@@ -83,17 +83,17 @@ const cells = weeks.flatMap((week, weekIndex) =>
 
 const metric = (x, value, label, color) => `
   <g transform="translate(${x} 126)">
-    <rect width="238" height="106" rx="18" fill="#0B202A" stroke="${color}" stroke-opacity="0.65"/>
+    <rect width="238" height="106" rx="18" fill="#15151A" stroke="${color}" stroke-opacity="0.65"/>
     <text x="24" y="50" fill="${color}" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="800">${escapeXml(value)}</text>
-    <text x="24" y="78" fill="#91A9B7" font-family="Consolas, monospace" font-size="12" letter-spacing="1.2">${escapeXml(label)}</text>
+    <text x="24" y="78" fill="#9AA33B" font-family="Consolas, monospace" font-size="12" letter-spacing="1.2">${escapeXml(label)}</text>
   </g>`;
 
 const activitySvg = `<svg width="1200" height="475" viewBox="0 0 1200 475" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">Aryan Singh's GitHub activity arcade</title>
   <desc id="desc">Live public contribution statistics and a one-year contribution grid rendered from GitHub data.</desc>
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="475"><stop stop-color="#06111A"/><stop offset="1" stop-color="#071C27"/></linearGradient>
-    <linearGradient id="xp" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#FF4D4D"/><stop offset="0.5" stop-color="#F7F6F2"/><stop offset="1" stop-color="#5CE1FF"/></linearGradient>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="475"><stop stop-color="#0D0D11"/><stop offset="1" stop-color="#15151A"/></linearGradient>
+    <linearGradient id="xp" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#F1FF0A" stop-opacity=".28"/><stop offset="0.5" stop-color="#F1FF0A"/><stop offset="1" stop-color="#F1FF0A" stop-opacity=".6"/></linearGradient>
     <filter id="glow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
   </defs>
   <style>
@@ -105,25 +105,25 @@ const activitySvg = `<svg width="1200" height="475" viewBox="0 0 1200 475" fill=
     @keyframes blink { 50% { opacity:0; } }
   </style>
   <rect width="1200" height="475" rx="24" fill="url(#bg)"/>
-  <rect x="1" y="1" width="1198" height="473" rx="23" stroke="#5CE1FF" stroke-opacity="0.3"/>
-  <text x="52" y="61" fill="#5CE1FF" font-family="Consolas, monospace" font-size="15" font-weight="700" letter-spacing="3">ACTIVITY ARCADE // LIVE SAVE FILE</text>
-  <text x="52" y="95" fill="#F7F6F2" font-family="Segoe UI, Arial, sans-serif" font-size="27" font-weight="800">PLAYER LEVEL ${level}</text>
-  <rect x="300" y="75" width="832" height="16" rx="8" fill="#122A35"/>
+  <rect x="1" y="1" width="1198" height="473" rx="23" stroke="#F1FF0A" stroke-opacity="0.3"/>
+  <text x="52" y="61" fill="#F1FF0A" font-family="Consolas, monospace" font-size="15" font-weight="700" letter-spacing="3">ACTIVITY ARCADE // LIVE SAVE FILE</text>
+  <text x="52" y="95" fill="#F1FF0A" font-family="Segoe UI, Arial, sans-serif" font-size="27" font-weight="800">PLAYER LEVEL ${level}</text>
+  <rect x="300" y="75" width="832" height="16" rx="8" fill="#1B1C13"/>
   <rect class="xp-bar" x="300" y="75" width="${Math.max(18, Math.round(832 * progress / 10))}" height="16" rx="8" fill="url(#xp)" filter="url(#glow)"/>
-  <text x="1132" y="67" text-anchor="end" fill="#91A9B7" font-family="Consolas, monospace" font-size="11">${progress}/10 XP TO NEXT LEVEL</text>
-  ${metric(52, total, 'PUBLIC CONTRIBUTIONS', '#FF4D4D')}
-  ${metric(306, commits, 'PUBLIC COMMITS / YEAR', '#F7F6F2')}
-  ${metric(560, `${streak} DAYS`, 'CURRENT STREAK', '#5CE1FF')}
-  ${metric(814, activeDays, 'ACTIVE DAYS / YEAR', '#FF4D4D')}
+  <text x="1132" y="67" text-anchor="end" fill="#9AA33B" font-family="Consolas, monospace" font-size="11">${progress}/10 XP TO NEXT LEVEL</text>
+  ${metric(52, total, 'PUBLIC CONTRIBUTIONS', '#F1FF0A')}
+  ${metric(306, commits, 'PUBLIC COMMITS / YEAR', '#F1FF0A')}
+  ${metric(560, `${streak} DAYS`, 'CURRENT STREAK', '#F1FF0A')}
+  ${metric(814, activeDays, 'ACTIVE DAYS / YEAR', '#F1FF0A')}
   <g transform="translate(1068 126)">
-    <rect width="80" height="106" rx="18" fill="#0B202A" stroke="#5CE1FF" stroke-opacity="0.65"/>
-    <text x="40" y="50" text-anchor="middle" fill="#5CE1FF" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="800">${repoCount}</text>
-    <text x="40" y="77" text-anchor="middle" fill="#91A9B7" font-family="Consolas, monospace" font-size="10">PROJECTS</text>
+    <rect width="80" height="106" rx="18" fill="#15151A" stroke="#F1FF0A" stroke-opacity="0.65"/>
+    <text x="40" y="50" text-anchor="middle" fill="#F1FF0A" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="800">${repoCount}</text>
+    <text x="40" y="77" text-anchor="middle" fill="#9AA33B" font-family="Consolas, monospace" font-size="10">PROJECTS</text>
   </g>
-  <text x="52" y="279" fill="#F7F6F2" font-family="Consolas, monospace" font-size="13" letter-spacing="2">CONTRIBUTION MAP // LAST 52 WEEKS</text>
+  <text x="52" y="279" fill="#F1FF0A" font-family="Consolas, monospace" font-size="13" letter-spacing="2">CONTRIBUTION MAP // LAST 52 WEEKS</text>
   <g>${cells}</g>
-  <text x="52" y="447" fill="#66818E" font-family="Consolas, monospace" font-size="11">SNAPSHOT FROM GITHUB PUBLIC ACTIVITY</text>
-  <text x="1148" y="447" text-anchor="end" fill="#66818E" font-family="Consolas, monospace" font-size="11">LAST CHECKPOINT: ${escapeXml(today)} <tspan class="cursor" fill="#5CE1FF">▮</tspan></text>
+  <text x="52" y="447" fill="#9AA33B" font-family="Consolas, monospace" font-size="11">SNAPSHOT FROM GITHUB PUBLIC ACTIVITY</text>
+  <text x="1148" y="447" text-anchor="end" fill="#9AA33B" font-family="Consolas, monospace" font-size="11">LAST CHECKPOINT: ${escapeXml(today)} <tspan class="cursor" fill="#F1FF0A">▮</tspan></text>
 </svg>`;
 
 const snakeX = 118;
@@ -153,17 +153,17 @@ for (let row = 0; row < 7; row += 1) {
 }
 const snakePath = snakePathParts.join(' ');
 const body = Array.from({ length: 12 }, (_, index) => {
-  const fill = index < 4 ? '#FF4D4D' : index < 8 ? '#F7F6F2' : '#5CE1FF';
+  const fill = index < 4 ? '#F1FF0A' : index < 8 ? '#C7D20B' : '#89910A';
   const radius = Math.max(3.8, 7 - index * 0.24);
   return `<circle r="${radius.toFixed(1)}" fill="${fill}" opacity="${(1 - index * 0.045).toFixed(2)}"><animateMotion dur="16s" begin="-${(index * 0.32).toFixed(2)}s" repeatCount="indefinite" rotate="auto"><mpath href="#snakeRoute"/></animateMotion></circle>`;
 }).join('\n    ');
 
 const snakeSvg = `<svg width="1200" height="330" viewBox="0 0 1200 330" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">Contribution run in snake mode</title>
-  <desc id="desc">An animated coral and cyan snake travels through Aryan Singh's one-year public contribution map.</desc>
+  <desc id="desc">An animated neon yellow snake travels through Aryan Singh's one-year public contribution map.</desc>
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="330"><stop stop-color="#07151E"/><stop offset=".5" stop-color="#0A202A"/><stop offset="1" stop-color="#06111A"/></linearGradient>
-    <linearGradient id="snakeLine" x1="118" y1="0" x2="970" y2="0" gradientUnits="userSpaceOnUse"><stop stop-color="#FF4D4D"/><stop offset=".5" stop-color="#F7F6F2"/><stop offset="1" stop-color="#5CE1FF"/></linearGradient>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="330"><stop stop-color="#0D0D11"/><stop offset=".5" stop-color="#15151A"/><stop offset="1" stop-color="#0D0D11"/></linearGradient>
+    <linearGradient id="snakeLine" x1="118" y1="0" x2="970" y2="0" gradientUnits="userSpaceOnUse"><stop stop-color="#F1FF0A" stop-opacity=".3"/><stop offset=".5" stop-color="#F1FF0A"/><stop offset="1" stop-color="#F1FF0A" stop-opacity=".55"/></linearGradient>
     <filter id="glow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
     <path id="snakeRoute" d="${snakePath}"/>
   </defs>
@@ -177,20 +177,20 @@ const snakeSvg = `<svg width="1200" height="330" viewBox="0 0 1200 330" xmlns="h
     @keyframes blink { 50% { opacity:.1; } }
   </style>
   <rect width="1200" height="330" rx="24" fill="url(#bg)"/>
-  <rect x="1" y="1" width="1198" height="328" rx="23" fill="none" stroke="#FF4D4D" stroke-opacity=".3"/>
-  <text x="52" y="54" fill="#FF4D4D" font-family="Consolas, monospace" font-size="15" font-weight="700" letter-spacing="3">CONTRIBUTION RUN // SNAKE MODE</text>
-  <text x="1148" y="54" text-anchor="end" fill="#91A9B7" font-family="Consolas, monospace" font-size="11">SCORE ${total} <tspan class="blink" fill="#5CE1FF">●</tspan></text>
-  <text x="52" y="82" fill="#F7F6F2" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="800">EATING PIXELS. SHIPPING STORIES.</text>
+  <rect x="1" y="1" width="1198" height="328" rx="23" fill="none" stroke="#F1FF0A" stroke-opacity=".3"/>
+  <text x="52" y="54" fill="#F1FF0A" font-family="Consolas, monospace" font-size="15" font-weight="700" letter-spacing="3">CONTRIBUTION RUN // SNAKE MODE</text>
+  <text x="1148" y="54" text-anchor="end" fill="#9AA33B" font-family="Consolas, monospace" font-size="11">SCORE ${total} <tspan class="blink" fill="#F1FF0A">●</tspan></text>
+  <text x="52" y="82" fill="#F1FF0A" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="800">EATING PIXELS. SHIPPING STORIES.</text>
   <g>${snakeCells}</g>
   <use href="#snakeRoute" fill="none" stroke="url(#snakeLine)" stroke-width="2" stroke-dasharray="8 13" opacity=".24" class="dash"/>
   <g filter="url(#glow)">${body}</g>
-  <circle r="8.5" fill="#FF4D4D" stroke="#F7F6F2" stroke-width="2" filter="url(#glow)"><animateMotion dur="16s" repeatCount="indefinite" rotate="auto"><mpath href="#snakeRoute"/></animateMotion></circle>
-  <text x="52" y="301" fill="#66818E" font-family="Consolas, monospace" font-size="11">LIVE GRID / LAST 52 WEEKS</text>
-  <text x="1148" y="301" text-anchor="end" fill="#66818E" font-family="Consolas, monospace" font-size="11">LOOPING THROUGH ${activeDays} ACTIVE DAYS</text>
+  <circle r="8.5" fill="#F1FF0A" stroke="#F1FF0A" stroke-width="2" filter="url(#glow)"><animateMotion dur="16s" repeatCount="indefinite" rotate="auto"><mpath href="#snakeRoute"/></animateMotion></circle>
+  <text x="52" y="301" fill="#9AA33B" font-family="Consolas, monospace" font-size="11">LIVE GRID / LAST 52 WEEKS</text>
+  <text x="1148" y="301" text-anchor="end" fill="#9AA33B" font-family="Consolas, monospace" font-size="11">LOOPING THROUGH ${activeDays} ACTIVE DAYS</text>
 </svg>`;
 
 await Promise.all([
-  writeFile('assets/activity-coral-cyan.svg', activitySvg, 'utf8'),
-  writeFile('assets/snake.svg', snakeSvg, 'utf8'),
+  writeFile('assets/activity-neon-yellow.svg', activitySvg, 'utf8'),
+  writeFile('assets/snake-neon-yellow.svg', snakeSvg, 'utf8'),
 ]);
-console.log(`Rendered activity-coral-cyan.svg and snake.svg for ${username}: ${total} contributions, level ${level}.`);
+console.log(`Rendered activity-neon-yellow.svg and snake-neon-yellow.svg for ${username}: ${total} contributions, level ${level}.`);

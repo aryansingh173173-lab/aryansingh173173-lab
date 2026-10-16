@@ -1,0 +1,17 @@
+<svg width="1200" height="150" viewBox="0 0 1200 150" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="End credits">
+  <defs>
+    <linearGradient id="line" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F1FF0A" stop-opacity="0"/><stop offset="0.25" stop-color="#F1FF0A"/><stop offset="0.5" stop-color="#F1FF0A" stop-opacity=".45"/><stop offset="0.75" stop-color="#F1FF0A"/><stop offset="1" stop-color="#F1FF0A" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="150" rx="22" fill="#0D0D11"/>
+  <rect x="1" y="1" width="1198" height="148" rx="21" fill="none" stroke="#F1FF0A" stroke-opacity=".26"/>
+  <path d="M0 32C150 0 250 64 400 32S650 0 800 32s250 32 400 0" stroke="url(#line)" stroke-width="3" filter="url(#glow)">
+    <animate attributeName="d" dur="8s" repeatCount="indefinite" values="M0 32C150 0 250 64 400 32S650 0 800 32s250 32 400 0;M0 32C150 64 250 0 400 32s250 32 400 0 250 0 400 32;M0 32C150 0 250 64 400 32S650 0 800 32s250 32 400 0"/>
+  </path>
+  <circle cx="325" cy="85" r="5" fill="#F1FF0A"><animate attributeName="opacity" values=".2;1;.2" dur="1.6s" repeatCount="indefinite"/></circle>
+  <circle cx="875" cy="85" r="5" fill="#F1FF0A"><animate attributeName="opacity" values="1;.2;1" dur="1.6s" repeatCount="indefinite"/></circle>
+  <text x="600" y="91" text-anchor="middle" fill="#F1FF0A" font-family="Consolas, monospace" font-size="17" letter-spacing="4">THE NEXT SCENE IS ALREADY RENDERING</text>
+  <text x="600" y="121" text-anchor="middle" fill="#F1FF0A" fill-opacity=".58" font-family="Consolas, monospace" font-size="12" letter-spacing="2">DESIGNED &amp; BUILT BY ARYAN SINGH</text>
+</svg>

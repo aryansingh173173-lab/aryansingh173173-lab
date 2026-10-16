@@ -8,6 +8,12 @@
     <pattern id="stars" width="68" height="49" patternUnits="userSpaceOnUse"><circle cx="9" cy="12" r="1" fill="#5CE1FF" opacity=".34"/><circle cx="45" cy="35" r="1" fill="#F7F6F2" opacity=".25"/><circle cx="65" cy="8" r=".8" fill="#FF4D4D" opacity=".38"/></pattern>
   </defs>
   <style>
+    [fill="#06111A"], [fill="#07151E"], [fill="#0B202A"], [fill="#0B222C"] { fill: #0D0D11; }
+    [fill="#FF4D4D"], [fill="#5CE1FF"], [fill="#F7F6F2"] { fill: #F1FF0A; }
+    [fill="#91A9B7"] { fill: #F1FF0A; fill-opacity: .58; }
+    [stroke="#FF4D4D"], [stroke="#5CE1FF"], [stroke="#F7F6F2"] { stroke: #F1FF0A; }
+    stop[stop-color="#06111A"], stop[stop-color="#07151E"], stop[stop-color="#0B222C"] { stop-color: #0D0D11; }
+    stop[stop-color="#FF4D4D"], stop[stop-color="#5CE1FF"], stop[stop-color="#F7F6F2"] { stop-color: #F1FF0A; }
     .lane-a { animation: driftA 7s ease-in-out infinite alternate; }
     .lane-b { animation: driftB 8s ease-in-out infinite alternate; }
     .lane-c { animation: driftA 9s ease-in-out infinite alternate-reverse; }
@@ -18,7 +24,7 @@
     @keyframes driftA { to { transform: translateX(24px); } }
     @keyframes driftB { to { transform: translateX(-22px); } }
     @keyframes beam { from { stroke-dashoffset: 0; } to { stroke-dashoffset: -110; } }
-    @keyframes node { 0%,100% { opacity:.82; } 50% { opacity:1; filter:drop-shadow(0 0 6px #5CE1FF); } }
+    @keyframes node { 0%,100% { opacity:.82; } 50% { opacity:1; filter:drop-shadow(0 0 6px #F1FF0A); } }
     @keyframes blink { 50% { opacity: .15; } }
   </style>
   <rect width="1200" height="430" rx="26" fill="url(#bg)"/>

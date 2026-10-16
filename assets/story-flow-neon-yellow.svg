@@ -9,6 +9,13 @@
     <path id="storyRail" d="M98 214 C205 214 205 155 322 155 S448 275 563 275 S706 150 812 150 S968 218 1102 218"/>
   </defs>
   <style>
+    [fill="#06111A"], [fill="#07151E"], [fill="#0A202A"], [fill="#0B202A"] { fill: #0D0D11; }
+    [fill="#FF4D4D"], [fill="#5CE1FF"], [fill="#F7F6F2"] { fill: #F1FF0A; }
+    [fill="#91A9B7"] { fill: #F1FF0A; fill-opacity: .58; }
+    [stroke="#173845"] { stroke: #30321A; }
+    [stroke="#FF4D4D"], [stroke="#5CE1FF"], [stroke="#F7F6F2"], [stroke="#91A9B7"] { stroke: #F1FF0A; }
+    stop[stop-color="#06111A"], stop[stop-color="#07151E"], stop[stop-color="#0A202A"] { stop-color: #0D0D11; }
+    stop[stop-color="#FF4D4D"], stop[stop-color="#5CE1FF"], stop[stop-color="#F7F6F2"] { stop-color: #F1FF0A; }
     .dash { animation: dash 7s linear infinite; }
     .pulse { animation: pulse 2.8s ease-in-out infinite; }
     .type-a { animation: typeA 5s steps(4,end) infinite; }
@@ -17,11 +24,11 @@
     .launch { animation: launch 3s ease-in-out infinite; }
     .blink { animation: blink 1s steps(2,end) infinite; }
     @keyframes dash { to { stroke-dashoffset: -150; } }
-    @keyframes pulse { 0%,100% { opacity:.78; } 50% { opacity:1; filter:drop-shadow(0 0 8px #FF4D4D); } }
+    @keyframes pulse { 0%,100% { opacity:.78; } 50% { opacity:1; filter:drop-shadow(0 0 8px #F1FF0A); } }
     @keyframes typeA { 0%,15% { width: 0 } 45%,100% { width: 100px } }
     @keyframes typeB { 0%,30% { width: 0 } 65%,100% { width: 126px } }
     @keyframes spin { to { transform: rotate(360deg); } }
-    @keyframes launch { 0%,100% { opacity:.78; } 50% { opacity:1; filter:drop-shadow(0 0 9px #5CE1FF); } }
+    @keyframes launch { 0%,100% { opacity:.78; } 50% { opacity:1; filter:drop-shadow(0 0 9px #F1FF0A); } }
     @keyframes blink { 50% { opacity: 0; } }
   </style>
   <rect width="1200" height="420" rx="26" fill="url(#bg)"/>

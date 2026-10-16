@@ -6,6 +6,10 @@
     <filter id="glow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
   </defs>
   <style>
+    [fill="#07141F"] { fill: #0D0D11; }
+    [fill="#FF4D4D"], [fill="#5CE1FF"], [fill="#F7F6F2"] { fill: #F1FF0A; }
+    [stroke="#FF4D4D"], [stroke="#5CE1FF"] { stroke: #F1FF0A; }
+    stop[stop-color="#FF4D4D"], stop[stop-color="#5CE1FF"] { stop-color: #F1FF0A; }
     .pulse { animation: pulse 2.3s ease-in-out infinite; }
     .scan { animation: scan 4.2s linear infinite; }
     .corner { animation: corner 2.3s ease-in-out infinite; }
