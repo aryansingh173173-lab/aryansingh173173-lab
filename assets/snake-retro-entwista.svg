@@ -388,7 +388,8 @@
     <rect class="quiet" x="950" y="132" width="12" height="12" rx="3" fill="#72A4CA" style="animation-delay:-0.6s"><title>2026-10-18: 0 contributions</title></rect>
     <rect class="quiet" x="950" y="148" width="12" height="12" rx="3" fill="#72A4CA" style="animation-delay:-0.7s"><title>2026-10-19: 0 contributions</title></rect>
     <rect class="quiet" x="950" y="164" width="12" height="12" rx="3" fill="#72A4CA" style="animation-delay:-0.8s"><title>2026-10-20: 0 contributions</title></rect>
-    <rect class="food" x="950" y="180" width="12" height="12" rx="3" fill="#F3ECC0" style="animation-delay:-0.9s"><title>2026-10-21: 1 contribution</title></rect></g>
+    <rect class="quiet" x="950" y="180" width="12" height="12" rx="3" fill="#72A4CA" style="animation-delay:-0.9s"><title>2026-10-21: 0 contributions</title></rect>
+    <rect class="food" x="950" y="196" width="12" height="12" rx="3" fill="#F3ECC0" style="animation-delay:-1s"><title>2026-10-22: 1 contribution</title></rect></g>
   <use href="#snakeRoute" fill="none" stroke="url(#snakeLine)" stroke-width="2" stroke-dasharray="8 13" opacity=".24" class="dash"/>
   <g><circle r="7.0" fill="#FC5012" opacity="1.00"><animateMotion dur="16s" begin="-0.00s" repeatCount="indefinite" rotate="auto"><mpath href="#snakeRoute"/></animateMotion></circle>
     <circle r="6.8" fill="#FC5012" opacity="0.95"><animateMotion dur="16s" begin="-0.32s" repeatCount="indefinite" rotate="auto"><mpath href="#snakeRoute"/></animateMotion></circle>
