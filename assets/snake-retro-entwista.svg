@@ -19,7 +19,7 @@
   <rect width="1200" height="330" fill="url(#bg)"/>
   <path d="M0 0H1200V26C920 5 282 52 0 26Z" fill="#4E8DC0"/>
   <text x="52" y="56" fill="#FC5012" stroke="#0D0D11" stroke-width="1.5" paint-order="stroke" font-family="Impact, Haettenschweiler, sans-serif" font-size="24" letter-spacing="3">CONTRIBUTION RUN · SNAKE MODE</text>
-  <text x="1148" y="54" text-anchor="end" fill="#0D0D11" font-family="Arial Black, Arial, sans-serif" font-size="11" font-weight="900">SCORE 170 <tspan class="blink" fill="#FC5012">●</tspan></text>
+  <text x="1148" y="54" text-anchor="end" fill="#0D0D11" font-family="Arial Black, Arial, sans-serif" font-size="11" font-weight="900">SCORE 173 <tspan class="blink" fill="#FC5012">●</tspan></text>
   <text x="52" y="85" fill="#0D0D11" font-family="Georgia, serif" font-size="18" font-weight="700" font-style="italic">eating pixels. shipping stories.</text>
   <g><rect class="quiet" x="118" y="132" width="12" height="12" rx="3" fill="#72A4CA" style="animation-delay:-0s"><title>2025-10-26: 0 contributions</title></rect>
     <rect class="quiet" x="118" y="148" width="12" height="12" rx="3" fill="#72A4CA" style="animation-delay:-0.1s"><title>2025-10-27: 0 contributions</title></rect>
@@ -386,7 +386,8 @@
     <rect class="food" x="934" y="212" width="12" height="12" rx="3" fill="#F3ECC0" style="animation-delay:-0.8s"><title>2026-10-23: 1 contribution</title></rect>
     <rect class="food" x="934" y="228" width="12" height="12" rx="3" fill="#F3ECC0" style="animation-delay:-0.9s"><title>2026-10-24: 1 contribution</title></rect>
     <rect class="food" x="950" y="132" width="12" height="12" rx="3" fill="#F3ECC0" style="animation-delay:-0.6s"><title>2026-10-25: 2 contributions</title></rect>
-    <rect class="food" x="950" y="148" width="12" height="12" rx="3" fill="#F3ECC0" style="animation-delay:-0.7s"><title>2026-10-26: 1 contribution</title></rect></g>
+    <rect class="food" x="950" y="148" width="12" height="12" rx="3" fill="#F3ECC0" style="animation-delay:-0.7s"><title>2026-10-26: 3 contributions</title></rect>
+    <rect class="food" x="950" y="164" width="12" height="12" rx="3" fill="#F3ECC0" style="animation-delay:-0.8s"><title>2026-10-27: 1 contribution</title></rect></g>
   <use href="#snakeRoute" fill="none" stroke="url(#snakeLine)" stroke-width="2" stroke-dasharray="8 13" opacity=".24" class="dash"/>
   <g><circle r="7.0" fill="#FC5012" opacity="1.00"><animateMotion dur="16s" begin="-0.00s" repeatCount="indefinite" rotate="auto"><mpath href="#snakeRoute"/></animateMotion></circle>
     <circle r="6.8" fill="#FC5012" opacity="0.95"><animateMotion dur="16s" begin="-0.32s" repeatCount="indefinite" rotate="auto"><mpath href="#snakeRoute"/></animateMotion></circle>
@@ -402,6 +403,6 @@
     <circle r="4.4" fill="#F3ECC0" opacity="0.51"><animateMotion dur="16s" begin="-3.52s" repeatCount="indefinite" rotate="auto"><mpath href="#snakeRoute"/></animateMotion></circle></g>
   <circle r="8.5" fill="#FC5012" stroke="#0D0D11" stroke-width="2"><animateMotion dur="16s" repeatCount="indefinite" rotate="auto"><mpath href="#snakeRoute"/></animateMotion></circle>
   <text x="52" y="301" fill="#0D0D11" font-family="Arial Black, Arial, sans-serif" font-size="10" font-weight="900">LIVE GRID · LAST 52 WEEKS</text>
-  <text x="1148" y="301" text-anchor="end" fill="#0D0D11" font-family="Arial Black, Arial, sans-serif" font-size="10" font-weight="900">LOOPING THROUGH 44 ACTIVE DAYS</text>
+  <text x="1148" y="301" text-anchor="end" fill="#0D0D11" font-family="Arial Black, Arial, sans-serif" font-size="10" font-weight="900">LOOPING THROUGH 45 ACTIVE DAYS</text>
   <rect width="1200" height="330" fill="transparent" filter="url(#grain)" opacity=".18"/>
 </svg>
