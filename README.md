@@ -18,6 +18,10 @@
 <p align="center"><i>Click a poster and step inside the build.</i></p>
 
 <p align="center">
+  <a href="https://omnidel-enterprise.vercel.app"><img src="./assets/retro-previews/omnidel.svg" width="49%" alt="Animated preview of OmniDEL.ai" /></a>
+  <a href="https://aryan-film-making.vercel.app"><img src="./assets/retro-previews/aryan-filmmaking.svg" width="49%" alt="Animated preview of Aryan Singh's filmmaking portfolio" /></a>
+</p>
+<p align="center">
   <a href="https://bks-pujoo.vercel.app/site/?lang=en"><img src="./assets/retro-previews/bks-pujoo.svg" width="49%" alt="Animated preview of BKS Pujoo" /></a>
   <a href="https://bks-bengal.vercel.app"><img src="./assets/retro-previews/bks-bengal.svg" width="49%" alt="Animated preview of BKS Bengal" /></a>
 </p>
@@ -27,7 +31,6 @@
 </p>
 <p align="center">
   <a href="https://bks-pujo-demo.vercel.app"><img src="./assets/retro-previews/bks-pujo-demo.svg" width="49%" alt="Animated preview of BKS Pujo 2026" /></a>
-  <a href="https://aryan-film-making.vercel.app"><img src="./assets/retro-previews/aryan-filmmaking.svg" width="49%" alt="Animated preview of Aryan Singh's filmmaking portfolio" /></a>
 </p>
 
 <br />
@@ -54,6 +57,7 @@
 
 | Project | Portal |
 | :--- | :---: |
+| **OmniDEL.ai** | [Live](https://omnidel-enterprise.vercel.app) |
 | **BKS Pujoo** | [Live](https://bks-pujoo.vercel.app/site/?lang=en) · [Code](https://github.com/aryansingh173173-lab/bks-pujo) |
 | **bks-bengal** | [Live](https://bks-bengal.vercel.app) · [Code](https://github.com/aryansingh173173-lab/bks-bengal) |
 | **krl-site** | [Live](https://krl-site.vercel.app) · [Code](https://github.com/aryansingh173173-lab/krl-site) |
